@@ -40,14 +40,13 @@ export const registerCustomer = async (customerData) => {
   }
 };
 
-// CRUD operations
 export const createCustomer = async (data) => {
   const res = await axios.post(`${BASE_URL}`, data);
   return res.data;
 };
 
 export const updateCustomer = (customer) => {
-  return axios.put(`${BASE_URL}/update`, customer); // send full customer object
+  return axios.put(`${BASE_URL}/update`, customer);
 };
 
 export const deleteCustomer = async (id) => {
