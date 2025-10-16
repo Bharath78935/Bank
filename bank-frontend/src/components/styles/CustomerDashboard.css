@@ -1,0 +1,150 @@
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #f4f6f8;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --white: #ffffff;
+}
+
+/* Layout */
+.dashboard-wrapper {
+  display: flex;
+  height: 100vh;
+  background: var(--secondary-color);
+  font-family: "Inter", "Poppins", sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background-color: #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+}
+
+.sidebar-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.bank-name {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.menu-btn {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--text-dark);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.menu-btn:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.menu-btn.active {
+  background: var(--primary-color);
+  color: white;
+  font-weight: 600;
+}
+
+.logout-btn {
+  margin-top: 2rem;
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}
+
+/* Main area */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--secondary-color);
+}
+
+/* Top bar */
+.topbar {
+  background: #ffffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.page-title {
+  color: var(--text-dark);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Content area */
+.content-area {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.content-area > div {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+
+.profile-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.profile-card h2 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 1.5rem;
+}
+
+.profile-info p {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.status {
+  font-weight: bold;
+  color: green;
+}
+
+.skeleton-line {
+  height: 20px;
+  background: #e0e0e0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}

@@ -1,0 +1,112 @@
+/* Floating group for select */
+.transaction-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+  font-family: "Inter", sans-serif;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.floating-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.floating-group input,
+.floating-group select,
+.floating-group textarea {
+  width: 100%;
+  padding: 12px 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  background: none;
+}
+
+.floating-group label {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  color: #888;
+  font-size: 14px;
+  transition: 0.2s ease all;
+  pointer-events: none;
+}
+
+.floating-group input:focus + label,
+.floating-group textarea:focus + label,
+.floating-group select.not-empty + label,
+.floating-group input:not(:placeholder-shown) + label,
+.floating-group textarea:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 10px;
+  font-size: 12px;
+  color: #007bff;
+  background: #fff;
+  padding: 0 4px;
+}
+
+.field-error {
+  margin-top: 4px;
+  color: #d9534f;
+  font-size: 13px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #495057;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,240 @@
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #f4f6f8;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --white: #ffffff;
+}
+
+/* Layout */
+.dashboard-wrapper {
+  display: flex;
+  height: 100vh;
+  background: var(--secondary-color);
+  font-family: "Inter", sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background: var(--white);
+  box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+}
+
+.sidebar-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.bank-name {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+
+.menu-btn {
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-dark);
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.menu-btn:hover,
+.menu-btn.active {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+.logout-btn {
+  margin-top: 2rem;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  background: #dc3545;
+  color: var(--white);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.logout-btn:hover {
+  background: #c82333;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--secondary-color);
+}
+
+/* Top Bar */
+.topbar {
+  background: var(--white);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+}
+
+.page-title {
+  color: var(--text-dark);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.page-subtitle {
+  color: var(--text-light);
+  margin-top: 0.25rem;
+}
+
+/* Content Area */
+.content-area {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.content-area > * {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  margin-bottom: 1.5rem;
+}
+
+/* Summary Cards */
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.summary-card {
+  text-align: center;
+}
+
+.summary-card h3 {
+  font-size: 1rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.summary-card p {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin: 0;
+  font-weight: 700;
+}
+
+/* Details Table */
+.details-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.details-table th,
+.details-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--secondary-color);
+  text-align: left;
+}
+
+.details-table th {
+  background: var(--secondary-color);
+  color: var(--text-light);
+}
+
+/* Buttons */
+.btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  color: var(--white);
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background: #0b5ed7;
+}
+
+.btn-secondary {
+  background: var(--text-light);
+  color: var(--text-dark);
+}
+
+.btn-secondary:hover {
+  background: #5a5f67;
+}
+
+.btn-danger {
+  background: #dc3545;
+}
+
+.btn-danger:hover {
+  background: #c82333;
+}
+
+/* Form */
+.account-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.account-form label {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.account-form input,
+.account-form select {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+}
+
+.account-form input:focus,
+.account-form select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(13,110,253,0.1);
+}
+
+/* Loader Skeleton */
+.skeleton-line {
+  height: 16px;
+  background: var(--secondary-color);
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%,100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+

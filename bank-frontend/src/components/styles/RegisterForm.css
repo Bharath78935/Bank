@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+.register-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e8ba3 100%);
+  position: relative;
+}
+
+.register-page::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.glass-card {
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+  padding: 50px 60px;
+  color: #1a1a1a;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 32px;
+  color: #1e3c72;
+  letter-spacing: -0.5px;
+}
+
+.title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
+  margin: 15px auto 30px;
+  border-radius: 2px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.form-group {
+  position: relative;
+}
+
+/* Make specific fields span full width */
+.form-group:has(input[name="permanentAddress"]) {
+  grid-column: span 3;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 14px 16px;
+  background: #f8f9fa;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  color: #1a1a1a;
+  outline: none;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.form-group input:hover,
+.form-group select:hover {
+  border-color: #2a5298;
+  background: #ffffff;
+}
+
+.form-group input::placeholder {
+  color: #9ca3af;
+}
+
+/* Hide number input spinners */
+.form-group input[type="number"]::-webkit-outer-spin-button,
+.form-group input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-group input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #1e3c72;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(30, 60, 114, 0.1);
+}
+
+.form-group select option[value=""] {
+  color: #9ca3af;
+}
+
+.form-group select option {
+  background: #ffffff;
+  color: #1a1a1a;
+  padding: 10px;
+}
+
+/* Label positioning */
+.form-group label {
+  position: absolute;
+  left: 16px;
+  top: 15px;
+  font-size: 14px;
+  color: #6b7280;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  background: transparent;
+  padding: 0 4px;
+  font-weight: 500;
+}
+
+/* Active/Filled label state */
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group select:focus + label,
+.form-group label.filled {
+  top: -10px;
+  font-size: 12px;
+  background: #ffffff;
+  color: #1e3c72;
+  font-weight: 600;
+  padding: 0 6px;
+}
+
+.input-error {
+  border-color: #dc2626 !important;
+  background: #fef2f2 !important;
+}
+
+.error-text {
+  font-size: 11px;
+  color: #dc2626;
+  margin-top: 4px;
+  display: block;
+  font-weight: 500;
+}
+
+.btn-submit {
+  grid-column: span 3;
+  width: 100%;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  border: none;
+  padding: 16px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(30, 60, 114, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(30, 60, 114, 0.4);
+  background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+}
+
+.btn-submit:active {
+  transform: translateY(0);
+}
+
+.form-error {
+  grid-column: span 3;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-left: 4px solid #dc2626;
+  padding: 14px 16px;
+  border-radius: 8px;
+  text-align: left;
+  margin-bottom: 10px;
+  color: #991b1b;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  color: #6b7280;
+  font-weight: 400;
+  font-size: 14px;
+  grid-column: span 3;
+}
+
+.login-link a {
+  color: #1e3c72;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.login-link a:hover {
+  color: #2a5298;
+  text-decoration: underline;
+}
+
+/* Large Desktop (1200px and above) - 3 columns */
+@media (min-width: 1200px) {
+  .glass-card {
+    max-width: 1000px;
+  }
+  
+  form {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Laptop/Tablet Landscape (769px - 1199px) - 2 columns */
+@media (min-width: 769px) and (max-width: 1199px) {
+  .glass-card {
+    max-width: 750px;
+    padding: 45px 40px;
+  }
+  
+  form {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  
+  .title {
+    font-size: 28px;
+  }
+  
+  .btn-submit {
+    grid-column: span 2;
+  }
+  
+  .form-error,
+  .login-link {
+    grid-column: span 2;
+  }
+  
+  .form-group:has(input[name="permanentAddress"]) {
+    grid-column: span 2;
+  }
+}
+
+/* Tablet Portrait (481px - 768px) - 2 columns */
+@media (min-width: 481px) and (max-width: 768px) {
+  .glass-card {
+    padding: 40px 30px;
+    max-width: 600px;
+  }
+  
+  form {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .title {
+    font-size: 26px;
+  }
+  
+  .btn-submit {
+    grid-column: span 2;
+  }
+  
+  .form-error,
+  .login-link {
+    grid-column: span 2;
+  }
+  
+  .form-group:has(input[name="permanentAddress"]) {
+    grid-column: span 2;
+  }
+  
+  .login-page .glass-card {
+    padding: 40px 35px;
+  }
+}
+
+/* Mobile (up to 480px) - 1 column */
+@media (max-width: 480px) {
+  .glass-card {
+    padding: 30px 20px;
+  }
+  
+  form {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .title {
+    font-size: 24px;
+  }
+  
+  .btn-submit,
+  .form-error,
+  .login-link {
+    grid-column: span 1;
+  }
+  
+  .form-group:has(input[name="permanentAddress"]) {
+    grid-column: span 1;
+  }
+  
+  .login-page .glass-card {
+    padding: 35px 25px;
+  }
+}
+
+/* Small Mobile (up to 360px) - Extra compact */
+@media (max-width: 360px) {
+  .glass-card {
+    padding: 25px 15px;
+  }
+  
+  .title {
+    font-size: 22px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+  
+  .form-group label {
+    font-size: 13px;
+  }
+  
+  .btn-submit {
+    padding: 14px;
+    font-size: 14px;
+  }
+  
+  .login-page .glass-card {
+    padding: 30px 20px;
+  }
+}
+
+.error-text {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 4px;
+  display: block;
+}

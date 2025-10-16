@@ -1,0 +1,126 @@
+.transactions-page-wrapper {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.transaction-header-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-back {
+  background: #f5f5f5;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.btn-back:hover {
+  background: #e0e0e0;
+}
+
+.account-info-wrapper h1 {
+  margin: 0;
+}
+
+.account-info {
+  font-weight: 500;
+  color: #555;
+}
+
+.alert-error {
+  background: #ffe0e0;
+  color: #b00020;
+  padding: 0.8rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-retry {
+  background: #b00020;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 0;
+  color: #777;
+}
+
+.transactions-table-container {
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  background: #fff;
+  margin-bottom: 1rem;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  word-wrap: break-word;
+}
+
+.transactions-table th {
+  background: #f0f0f0;
+  font-weight: 600;
+}
+
+.transactions-table tbody tr:hover {
+  background: #f9f9f9;
+}
+
+.credit {
+  color: green;
+  font-weight: 500;
+}
+
+.debit {
+  color: red;
+  font-weight: 500;
+}
+
+.download-container {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.btn-secondary {
+  background: #1976d2;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-secondary:disabled {
+  background: #9eb8d6;
+  cursor: not-allowed;
+}
+
+.btn-secondary:hover:enabled {
+  background: #115293;
+}
