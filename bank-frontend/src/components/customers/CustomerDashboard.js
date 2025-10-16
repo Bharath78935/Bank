@@ -42,19 +42,19 @@ export default function Dashboard() {
             className={`menu-btn ${activeTab === "update" ? "active" : ""}`}
             onClick={() => setActiveTab("update")}
           >
-            ✏️ Update Details
+             Update Details
           </button>
 
           <button
             className={`menu-btn ${activeTab === "delete" ? "active" : ""}`}
             onClick={() => setActiveTab("delete")}
           >
-            ❌ Delete Customer
+             Delete Customer
           </button>
         </nav>
 
         <button onClick={logout} className="logout-btn">
-          🚪 Logout
+          Logout
         </button>
       </aside>
 
