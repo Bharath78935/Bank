@@ -1,0 +1,14 @@
+127.0.0.1 - - [16/Oct/2025:15:55:42 +0530] "GET /cargocpc/index.html HTTP/1.1" 200 124
+0:0:0:0:0:0:0:1 - - [16/Oct/2025:15:57:49 +0530] "OPTIONS /banking/api/customer/create HTTP/1.1" 200 13
+0:0:0:0:0:0:0:1 - - [16/Oct/2025:15:57:54 +0530] "POST /banking/api/customer/create HTTP/1.1" 200 30
+0:0:0:0:0:0:0:1 - - [16/Oct/2025:15:58:31 +0530] "POST /banking/api/customer/login HTTP/1.1" 200 17
+0:0:0:0:0:0:0:1 - - [16/Oct/2025:15:58:31 +0530] "GET /banking/api/customer/username/kumari123 HTTP/1.1" 200 476
+0:0:0:0:0:0:0:1 - - [16/Oct/2025:15:58:31 +0530] "GET /banking/api/customer/username/kumari123 HTTP/1.1" 200 476
+0:0:0:0:0:0:0:1 - - [16/Oct/2025:15:58:40 +0530] "GET /banking/api/customer/username/kumari123 HTTP/1.1" 200 476
+0:0:0:0:0:0:0:1 - - [16/Oct/2025:15:58:40 +0530] "GET /banking/api/customer/username/kumari123 HTTP/1.1" 200 476
+0:0:0:0:0:0:0:1 - - [16/Oct/2025:15:58:53 +0530] "OPTIONS /banking/api/customer/update HTTP/1.1" 200 12
+0:0:0:0:0:0:0:1 - - [16/Oct/2025:15:58:53 +0530] "PUT /banking/api/customer/update HTTP/1.1" 400 40
+0:0:0:0:0:0:0:1 - - [16/Oct/2025:15:58:56 +0530] "GET /banking/api/customer/username/kumari123 HTTP/1.1" 200 476
+0:0:0:0:0:0:0:1 - - [16/Oct/2025:15:58:56 +0530] "GET /banking/api/customer/username/kumari123 HTTP/1.1" 200 476
+0:0:0:0:0:0:0:1 - - [16/Oct/2025:15:58:59 +0530] "OPTIONS /banking/api/customer/6 HTTP/1.1" 200 26
+0:0:0:0:0:0:0:1 - - [16/Oct/2025:15:58:59 +0530] "DELETE /banking/api/customer/6 HTTP/1.1" 200 30

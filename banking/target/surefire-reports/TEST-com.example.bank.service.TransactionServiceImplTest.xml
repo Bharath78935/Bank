@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.bank.service.TransactionServiceImplTest" time="0.9" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Bhara\OneDrive\new\Projects\Bank\banking\target\test-classes;C:\Users\Bhara\OneDrive\new\Projects\Bank\banking\target\classes;C:\Users\Bhara\.m2\repository\jakarta\ws\rs\jakarta.ws.rs-api\3.1.0\jakarta.ws.rs-api-3.1.0.jar;C:\Users\Bhara\.m2\repository\jakarta\servlet\jakarta.servlet-api\6.0.0\jakarta.servlet-api-6.0.0.jar;C:\Users\Bhara\.m2\repository\org\glassfish\jersey\core\jersey-server\3.1.1\jersey-server-3.1.1.jar;C:\Users\Bhara\.m2\repository\org\glassfish\jersey\core\jersey-common\3.1.1\jersey-common-3.1.1.jar;C:\Users\Bhara\.m2\repository\org\glassfish\hk2\osgi-resource-locator\1.0.3\osgi-resource-locator-1.0.3.jar;C:\Users\Bhara\.m2\repository\org\glassfish\jersey\core\jersey-client\3.1.1\jersey-client-3.1.1.jar;C:\Users\Bhara\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\Bhara\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Bhara\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\Bhara\.m2\repository\org\glassfish\jersey\containers\jersey-container-servlet\3.1.1\jersey-container-servlet-3.1.1.jar;C:\Users\Bhara\.m2\repository\org\glassfish\jersey\containers\jersey-container-servlet-core\3.1.1\jersey-container-servlet-core-3.1.1.jar;C:\Users\Bhara\.m2\repository\org\glassfish\jersey\inject\jersey-hk2\3.1.1\jersey-hk2-3.1.1.jar;C:\Users\Bhara\.m2\repository\org\glassfish\hk2\hk2-locator\3.0.3\hk2-locator-3.0.3.jar;C:\Users\Bhara\.m2\repository\org\glassfish\hk2\external\aopalliance-repackaged\3.0.3\aopalliance-repackaged-3.0.3.jar;C:\Users\Bhara\.m2\repository\org\glassfish\hk2\hk2-api\3.0.3\hk2-api-3.0.3.jar;C:\Users\Bhara\.m2\repository\org\glassfish\hk2\hk2-utils\3.0.3\hk2-utils-3.0.3.jar;C:\Users\Bhara\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\Bhara\.m2\repository\org\glassfish\jersey\media\jersey-media-json-jackson\3.1.1\jersey-media-json-jackson-3.1.1.jar;C:\Users\Bhara\.m2\repository\org\glassfish\jersey\ext\jersey-entity-filtering\3.1.1\jersey-entity-filtering-3.1.1.jar;C:\Users\Bhara\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.1\jackson-annotations-2.14.1.jar;C:\Users\Bhara\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.1\jackson-databind-2.14.1.jar;C:\Users\Bhara\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.1\jackson-core-2.14.1.jar;C:\Users\Bhara\.m2\repository\com\fasterxml\jackson\module\jackson-module-jakarta-xmlbind-annotations\2.14.1\jackson-module-jakarta-xmlbind-annotations-2.14.1.jar;C:\Users\Bhara\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\Bhara\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.0\jakarta.activation-api-2.1.0.jar;C:\Users\Bhara\.m2\repository\com\sun\mail\jakarta.mail\2.0.1\jakarta.mail-2.0.1.jar;C:\Users\Bhara\.m2\repository\com\sun\activation\jakarta.activation\2.0.1\jakarta.activation-2.0.1.jar;C:\Users\Bhara\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\Bhara\.m2\repository\org\apache\logging\log4j\log4j-core\2.23.1\log4j-core-2.23.1.jar;C:\Users\Bhara\.m2\repository\org\mindrot\jbcrypt\0.4\jbcrypt-0.4.jar;C:\Users\Bhara\.m2\repository\com\mysql\mysql-connector-j\8.0.33\mysql-connector-j-8.0.33.jar;C:\Users\Bhara\.m2\repository\com\google\protobuf\protobuf-java\3.21.9\protobuf-java-3.21.9.jar;C:\Users\Bhara\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Bhara\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Bhara\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Bhara\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Bhara\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Bhara\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Bhara\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Bhara\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\Bhara\.m2\repository\org\mockito\mockito-core\5.12.0\mockito-core-5.12.0.jar;C:\Users\Bhara\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\Bhara\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.15\byte-buddy-agent-1.14.15.jar;C:\Users\Bhara\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Bhara\.m2\repository\org\mockito\mockito-junit-jupiter\5.12.0\mockito-junit-jupiter-5.12.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\Bhara\AppData\Local\Temp\surefire11578131911442856232\surefirebooter-20251016155519094_3.jar C:\Users\Bhara\AppData\Local\Temp\surefire11578131911442856232 2025-10-16T15-55-18_760-jvmRun1 surefire-20251016155519094_1tmp surefire_0-20251016155519094_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Bhara\OneDrive\new\Projects\Bank\banking\target\test-classes;C:\Users\Bhara\OneDrive\new\Projects\Bank\banking\target\classes;C:\Users\Bhara\.m2\repository\jakarta\ws\rs\jakarta.ws.rs-api\3.1.0\jakarta.ws.rs-api-3.1.0.jar;C:\Users\Bhara\.m2\repository\jakarta\servlet\jakarta.servlet-api\6.0.0\jakarta.servlet-api-6.0.0.jar;C:\Users\Bhara\.m2\repository\org\glassfish\jersey\core\jersey-server\3.1.1\jersey-server-3.1.1.jar;C:\Users\Bhara\.m2\repository\org\glassfish\jersey\core\jersey-common\3.1.1\jersey-common-3.1.1.jar;C:\Users\Bhara\.m2\repository\org\glassfish\hk2\osgi-resource-locator\1.0.3\osgi-resource-locator-1.0.3.jar;C:\Users\Bhara\.m2\repository\org\glassfish\jersey\core\jersey-client\3.1.1\jersey-client-3.1.1.jar;C:\Users\Bhara\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\Bhara\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Bhara\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\Bhara\.m2\repository\org\glassfish\jersey\containers\jersey-container-servlet\3.1.1\jersey-container-servlet-3.1.1.jar;C:\Users\Bhara\.m2\repository\org\glassfish\jersey\containers\jersey-container-servlet-core\3.1.1\jersey-container-servlet-core-3.1.1.jar;C:\Users\Bhara\.m2\repository\org\glassfish\jersey\inject\jersey-hk2\3.1.1\jersey-hk2-3.1.1.jar;C:\Users\Bhara\.m2\repository\org\glassfish\hk2\hk2-locator\3.0.3\hk2-locator-3.0.3.jar;C:\Users\Bhara\.m2\repository\org\glassfish\hk2\external\aopalliance-repackaged\3.0.3\aopalliance-repackaged-3.0.3.jar;C:\Users\Bhara\.m2\repository\org\glassfish\hk2\hk2-api\3.0.3\hk2-api-3.0.3.jar;C:\Users\Bhara\.m2\repository\org\glassfish\hk2\hk2-utils\3.0.3\hk2-utils-3.0.3.jar;C:\Users\Bhara\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\Bhara\.m2\repository\org\glassfish\jersey\media\jersey-media-json-jackson\3.1.1\jersey-media-json-jackson-3.1.1.jar;C:\Users\Bhara\.m2\repository\org\glassfish\jersey\ext\jersey-entity-filtering\3.1.1\jersey-entity-filtering-3.1.1.jar;C:\Users\Bhara\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.1\jackson-annotations-2.14.1.jar;C:\Users\Bhara\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.1\jackson-databind-2.14.1.jar;C:\Users\Bhara\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.1\jackson-core-2.14.1.jar;C:\Users\Bhara\.m2\repository\com\fasterxml\jackson\module\jackson-module-jakarta-xmlbind-annotations\2.14.1\jackson-module-jakarta-xmlbind-annotations-2.14.1.jar;C:\Users\Bhara\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\Bhara\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.0\jakarta.activation-api-2.1.0.jar;C:\Users\Bhara\.m2\repository\com\sun\mail\jakarta.mail\2.0.1\jakarta.mail-2.0.1.jar;C:\Users\Bhara\.m2\repository\com\sun\activation\jakarta.activation\2.0.1\jakarta.activation-2.0.1.jar;C:\Users\Bhara\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\Bhara\.m2\repository\org\apache\logging\log4j\log4j-core\2.23.1\log4j-core-2.23.1.jar;C:\Users\Bhara\.m2\repository\org\mindrot\jbcrypt\0.4\jbcrypt-0.4.jar;C:\Users\Bhara\.m2\repository\com\mysql\mysql-connector-j\8.0.33\mysql-connector-j-8.0.33.jar;C:\Users\Bhara\.m2\repository\com\google\protobuf\protobuf-java\3.21.9\protobuf-java-3.21.9.jar;C:\Users\Bhara\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Bhara\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Bhara\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Bhara\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Bhara\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Bhara\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Bhara\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Bhara\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\Bhara\.m2\repository\org\mockito\mockito-core\5.12.0\mockito-core-5.12.0.jar;C:\Users\Bhara\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\Bhara\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.15\byte-buddy-agent-1.14.15.jar;C:\Users\Bhara\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Bhara\.m2\repository\org\mockito\mockito-junit-jupiter\5.12.0\mockito-junit-jupiter-5.12.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Bhara"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-07-15"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Bhara\OneDrive\new\Projects\Bank\banking"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Bhara\AppData\Local\Temp\surefire11578131911442856232\surefirebooter-20251016155519094_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.8+12-LTS-250"/>
+    <property name="user.name" value="Bhara"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Bhara\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Bhara\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.8"/>
+    <property name="user.dir" value="C:\Users\Bhara\OneDrive\new\Projects\Bank\banking"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MinGW\bin;C:\Program Files\Java\jdk-19\bin;C:\Program Files\nodejs\node_modules\npm\bin;c:\xampp\apache;c:\xampp\mysql;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-21\bin;C:\Program Files\apache-maven-3.9.11\bin;%NVM_HOME%;%NVM_SYMLINK%;C:\Users\Bhara\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Bhara\AppData\Local\Programs\Python\Python312\;C:\Users\Bhara\AppData\Local\Microsoft\WindowsApps;C:\Users\Bhara\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\nodejs;C:\Program Files (x86)\Nmap;C:\nvm;C:\nodejs;c:\Users\Bhara\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.8+12-LTS-250"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testCreateTransaction_Success" classname="com.example.bank.service.TransactionServiceImplTest" time="0.831">
+    <system-out><![CDATA[[15:55:25] &amp#27;[31mERROR&amp#27;[m EmailService - Failed to send email to john@example.com from customer banking.offical.bank@gmail.com
+java.lang.RuntimeException: Provider for jakarta.activation.spi.MailcapRegistryProvider cannot be found
+	at jakarta.activation.FactoryFinder.find(FactoryFinder.java:90) ~[jakarta.activation-api-2.1.0.jar:?]
+	at jakarta.activation.MailcapCommandMap.getImplementation(MailcapCommandMap.java:696) ~[jakarta.activation-api-2.1.0.jar:?]
+	at jakarta.activation.MailcapCommandMap.loadFile(MailcapCommandMap.java:284) ~[jakarta.activation-api-2.1.0.jar:?]
+	at jakarta.activation.MailcapCommandMap.<init>(MailcapCommandMap.java:154) ~[jakarta.activation-api-2.1.0.jar:?]
+	at jakarta.activation.CommandMap.getDefaultCommandMap(CommandMap.java:60) ~[jakarta.activation-api-2.1.0.jar:?]
+	at jakarta.activation.DataHandler.getCommandMap(DataHandler.java:128) ~[jakarta.activation-api-2.1.0.jar:?]
+	at jakarta.activation.DataHandler.getDataContentHandler(DataHandler.java:590) ~[jakarta.activation-api-2.1.0.jar:?]
+	at jakarta.activation.DataHandler.writeTo(DataHandler.java:290) ~[jakarta.activation-api-2.1.0.jar:?]
+	at jakarta.mail.internet.MimeUtility.getEncoding(MimeUtility.java:316) ~[jakarta.mail-2.0.1.jar:2.0.1]
+	at jakarta.mail.internet.MimeBodyPart.updateHeaders(MimeBodyPart.java:1551) ~[jakarta.mail-2.0.1.jar:2.0.1]
+	at jakarta.mail.internet.MimeMessage.updateHeaders(MimeMessage.java:2246) ~[jakarta.mail-2.0.1.jar:2.0.1]
+	at jakarta.mail.internet.MimeMessage.saveChanges(MimeMessage.java:2206) ~[jakarta.mail-2.0.1.jar:2.0.1]
+	at jakarta.mail.Transport.send(Transport.java:99) ~[jakarta.mail-2.0.1.jar:2.0.1]
+	at com.example.bank.service.EmailService.sendEmail(EmailService.java:47) ~[classes/:?]
+	at com.example.bank.service.impl.TransactionServiceImpl.sendTransactionEmails(TransactionServiceImpl.java:117) ~[classes/:?]
+	at com.example.bank.service.impl.TransactionServiceImpl.createTransaction(TransactionServiceImpl.java:47) ~[classes/:?]
+	at com.example.bank.service.TransactionServiceImplTest.testCreateTransaction_Success(TransactionServiceImplTest.java:75) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728) ~[junit-platform-commons-1.10.2.jar:1.10.2]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) [junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56) [surefire-junit-platform-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184) [surefire-junit-platform-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148) [surefire-junit-platform-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122) [surefire-junit-platform-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+[15:55:25] &amp#27;[32mINFO &amp#27;[m TransactionServiceImpl - Transaction emails sent successfully for transaction 1
+[15:55:25] &amp#27;[32mINFO &amp#27;[m TransactionServiceImpl - Emails are sent.
+[15:55:25] &amp#27;[32mINFO &amp#27;[m TransactionServiceImplTest - testCreateTransaction_Success executed
+]]></system-out>
+  </testcase>
+  <testcase name="testGetTransaction_Failure_NotFound" classname="com.example.bank.service.TransactionServiceImplTest" time="0.011">
+    <system-out><![CDATA[[15:55:25] &amp#27;[33mWARN &amp#27;[m TransactionServiceImplTest - testGetTransaction_Failure_NotFound executed
+]]></system-out>
+  </testcase>
+  <testcase name="testGetTransactionsByAccountNumber_Failure_Empty" classname="com.example.bank.service.TransactionServiceImplTest" time="0.009">
+    <system-out><![CDATA[[15:55:26] &amp#27;[33mWARN &amp#27;[m TransactionServiceImplTest - testGetTransactionsByAccountNumber_Failure_Empty executed
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateTransaction_Failure_DAOError" classname="com.example.bank.service.TransactionServiceImplTest" time="0.007">
+    <system-out><![CDATA[[15:55:26] &amp#27;[33mWARN &amp#27;[m TransactionServiceImplTest - testCreateTransaction_Failure_DAOError executed
+]]></system-out>
+  </testcase>
+  <testcase name="testGetTransaction_Success" classname="com.example.bank.service.TransactionServiceImplTest" time="0.013">
+    <system-out><![CDATA[[15:55:26] &amp#27;[32mINFO &amp#27;[m TransactionServiceImplTest - testGetTransaction_Success executed
+]]></system-out>
+  </testcase>
+  <testcase name="testGetTransactionsByAccountNumber_Success" classname="com.example.bank.service.TransactionServiceImplTest" time="0.012">
+    <system-out><![CDATA[[15:55:26] &amp#27;[32mINFO &amp#27;[m TransactionServiceImplTest - testGetTransactionsByAccountNumber_Success executed
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,12 @@
+[2025-10-16 15:57:52] [INFO ] CustomerController - Received request to create customer: com.example.bank.model.Customer@7123df6e
+[2025-10-16 15:57:53] [WARN ] CustomerServiceImpl - Customer not found: mulagapkabharath2543@gmail.com
+[2025-10-16 15:57:53] [WARN ] CustomerServiceImpl - Customer not found with Aadhar: 123456654321
+[2025-10-16 15:57:54] [INFO ] CustomerServiceImpl - Customer created: mulagapkabharath2543@gmail.com
+[2025-10-16 15:57:54] [INFO ] CustomerController - Customer created successfully: mulagapkabharath2543@gmail.com
+[2025-10-16 15:58:30] [INFO ] CustomerController - Login attempt for username: kumari123
+[2025-10-16 15:58:31] [INFO ] CustomerController - Login successful for username: kumari123
+[2025-10-16 15:58:53] [INFO ] CustomerController - Received request to update customer: com.example.bank.model.Customer@44ed15aa
+[2025-10-16 15:58:53] [INFO ] CustomerServiceImpl - Customer found: mulagapakabharath2543@gmail.com
+[2025-10-16 15:58:59] [INFO ] CustomerController - Received request to delete customer with ID: 6
+[2025-10-16 15:58:59] [INFO ] CustomerServiceImpl - Customer deleted: 6
+[2025-10-16 15:58:59] [INFO ] CustomerController - Customer deleted successfully with ID: 6
